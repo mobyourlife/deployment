@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var program = require('commander'),
 	package = require('../package'),
 	deploy = require('../lib/deploy');
