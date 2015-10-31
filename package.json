@@ -4,7 +4,7 @@
   "description": "Service responsible for deploying websites into static pages.",
   "main": "index.js",
   "bin": {
-    "mobyourlife-deployment": "deployment.js"
+    "mob-deploy": "bin/deployment.js"
   },
   "directories": {
     "test": "test"
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/mobyourlife/deployment.git"
+    "url": "https://github.com/mobyourlife/deployment.git"
   },
   "keywords": [
     "deploy"
   ],
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
   "license": "Apache-2.0",
-  "homepage": "https://bitbucket.org/mobyourlife/deployment#readme",
+  "homepage": "https://github.com/mobyourlife/deployment#readme",
   "dependencies": {
-    "mobyourlife-api": "git+ssh://git@bitbucket.org/mobyourlife/api.git"
+    "mobyourlife-api": "https://github.com/mobyourlife/api.git"
   }
 }
