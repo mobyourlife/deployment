@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node bin/deployment.js deploy 1446731825581145"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,10 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/mobyourlife/deployment#readme",
   "dependencies": {
-    "mobyourlife-api": "https://github.com/mobyourlife/api.git"
+    "commander": "^2.9.0",
+    "handlebars": "^4.0.4",
+    "mobyourlife-api": "https://github.com/mobyourlife/api.git",
+    "mongoose": "^4.2.3",
+    "through2": "^2.0.0"
   }
 }
