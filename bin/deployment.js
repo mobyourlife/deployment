@@ -4,11 +4,13 @@ var program = require('commander'),
 	package = require('../package'),
 	deploy = require('../lib/deploy');
 
-program
-	.version(package.version)
-	.option('-d --deploy [id]', 'deploy website [id] now')
-	.parse(process.argv);
+program.version(package.version);
 
-if (program.id) {
-	deploy(program.id);
-}
+program
+	.command('deploy <id>')
+	.description('deploy website')
+	.action((id) => {
+		deploy(id);
+	});
+
+program.parse(process.argv);
