@@ -10,7 +10,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node bin/deployment.js deploy 1446731825581145"
+    "example": "node bin/deployment.js deploy 1446731825581145",
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,11 @@
   "dependencies": {
     "commander": "^2.9.0",
     "handlebars": "^4.0.4",
-    "mobyourlife-api": "https://github.com/mobyourlife/api.git",
+    "mobv27-api": "github:mobyourlife/v3-api",
     "mongoose": "^4.2.3",
     "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "standard": "^6.0.8"
   }
 }

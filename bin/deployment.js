@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 
-var program = require('commander'),
-	package = require('../package'),
-	deploy = require('../lib/deploy');
+'use strict'
 
-program.version(package.version);
+const program = require('commander')
+const info = require('../package')
+const deploy = require('../lib/deploy')
+
+program.version(info.version)
 
 program
-	.command('deploy <id>')
-	.description('deploy website')
-	.action((id) => {
-		deploy(id);
-	});
+  .command('deploy <id>')
+  .description('deploy website')
+  .action((id) => {
+    deploy(id)
+  })
 
-program.parse(process.argv);
+program.parse(process.argv)
